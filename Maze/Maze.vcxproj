@@ -106,6 +106,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,20 +130,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Board.cpp" />
-    <ClCompile Include="ConsoleHelper.cpp" />
-    <ClCompile Include="Maze.cpp" />
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="Board\Board.cpp" />
+    <ClCompile Include="Helper\ConsoleHelper.cpp" />
+    <ClCompile Include="01.Maze\Maze.cpp" />
+    <ClCompile Include="Engine\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Player\Player.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Board.h" />
-    <ClInclude Include="ConsoleHelper.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Types.h" />
+    <ClInclude Include="Board\Board.h" />
+    <ClInclude Include="Helper\ConsoleHelper.h" />
+    <ClInclude Include="Engine\pch.h" />
+    <ClInclude Include="Player\Player.h" />
+    <ClInclude Include="Engine\Types.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
