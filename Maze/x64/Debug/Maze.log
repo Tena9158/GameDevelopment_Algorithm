@@ -1,2 +1,8 @@
-﻿  Maze.cpp
-  Maze.vcxproj -> C:\Users\jon10\Desktop\GameDevelopment_Algorithm\Algorithm\x64\Debug\Maze.exe
+﻿  pch.cpp
+D:\GameDevelopment_Algorithm\Algorithm\Maze\pch.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Board.cpp
+  ConsoleHelper.cpp
+  Maze.cpp
+  Player.cpp
+  코드를 생성하고 있습니다...
+  Maze.vcxproj -> D:\GameDevelopment_Algorithm\Algorithm\x64\Debug\Maze.exe

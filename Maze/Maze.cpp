@@ -1,10 +1,21 @@
 ﻿#include "pch.h"
 #include <iostream>
 #include "ConsoleHelper.h"
+#include "Board.h"
+#include "Player.h"
+
+Board board;
+Player player;
+
 int main()
 {
-	uint64 lastTick = 0;
+	srand(static_cast<unsigned int>(time(nullptr)));
 
+	board.Init(25, &player);
+	player.Init(&board);
+
+
+	uint64 lastTick = 0;
    while(true)
    {
 #pragma region Frame Management
@@ -16,21 +27,9 @@ int main()
 	   // Input
 
 	   // Logic
+	   player.Update(deltaTick);
 
 	   // Rendering
-
-	   ConsoleHelper::SetCursorPosition(0, 0);
-	   ConsoleHelper::ShowConsoleCursor(false);
-	   ConsoleHelper::SetCursorColor(ConsoleColor::GREEN);
-
-	   const char* TILE = "■";
-	   for (int32 y = 0; y < 25; y++)
-	   {
-		   for (int32 x = 0; x < 25; x++)
-		   {
-			   cout << TILE;
-		   }
-		   cout << endl;
-	   }
+	   board.Render();
    }
 }

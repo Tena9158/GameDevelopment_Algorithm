@@ -2,7 +2,12 @@
 #include "ConsoleHelper.h"
 
 
-// This function moves the position of the cursor within the console window to specified coordinates(x, y).
+/// <summary>
+/// This function moves the position of the cursor within the console window to specified coordinates(x, y).
+/// 
+/// </summary>
+/// <param name="x"></param>
+/// <param name="y"></param>
 
 void ConsoleHelper::SetCursorPosition(int32 x, int32 y)
 {
@@ -14,8 +19,12 @@ void ConsoleHelper::SetCursorPosition(int32 x, int32 y)
 	SetConsoleCursorPosition(output, pos);
 }
 
-// The SetCursorColor function sets the text color within the console window to the specified ConsoleColor.
 
+/// <summary>
+/// The SetCursorColor function sets the text color within the console window to the specified ConsoleColor.
+/// 
+/// </summary>
+/// <param name="color"></param>
 void ConsoleHelper::SetCursorColor(ConsoleColor color)
 {
 	HANDLE output = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -23,7 +32,10 @@ void ConsoleHelper::SetCursorColor(ConsoleColor color)
 	SetConsoleTextAttribute(output, static_cast<int16>(color));
 }
 
-// The ShowConsoleCursor function provides the ability to hide or show the cursor within the console window.
+/// <summary>
+/// The ShowConsoleCursor function provides the ability to hide or show the cursor within the console window.
+/// </summary>
+/// <param name="flag"></param>
 
 void ConsoleHelper::ShowConsoleCursor(bool flag)
 {
