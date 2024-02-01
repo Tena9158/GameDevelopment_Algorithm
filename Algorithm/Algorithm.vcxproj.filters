@@ -7,10 +7,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithm.cpp">
+    <ClCompile Include="..\Dynamic_Array\Solo_Test.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Solo_Test.cpp">
+    <ClCompile Include="..\Dynamic_Array\DynamicArray.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
